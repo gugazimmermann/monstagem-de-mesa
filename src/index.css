@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
+
+:root {
+  --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+
+  --bg: #f6f1ea;
+  --surface: #fffcf8;
+  --text: #2c2118;
+  --text-muted: #7a6a5a;
+  --border: #e8ddd0;
+  --accent: #8b5a2b;
+  --accent-hover: #6f4620;
+  --accent-soft: #c4a574;
+  --accent-bg: #faf3ea;
+
+  --shadow-sm: 0 1px 3px rgba(44, 33, 24, 0.06);
+  --shadow-md: 0 8px 24px rgba(44, 33, 24, 0.08);
+
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text);
+  background-color: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 10% 0%, rgba(196, 165, 116, 0.18), transparent 45%),
+    radial-gradient(ellipse at 90% 100%, rgba(139, 90, 43, 0.08), transparent 40%),
+    var(--bg);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
