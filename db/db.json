@@ -1,0 +1,1176 @@
+{
+  "categorias": [
+    {
+      "id": "toalha",
+      "rotulo": "Toalhas",
+      "descricao": "Toalhas de mesa que cobrem a superfície"
+    },
+    {
+      "id": "lugarAmericano",
+      "rotulo": "Lugares Americanos",
+      "descricao": "Lugares americanos no lugar do sousplat (não combina com sousplat)"
+    },
+    {
+      "id": "sousplat",
+      "rotulo": "Sousplats",
+      "descricao": "Sousplats no lugar do lugar americano (não combina com lugar americano)"
+    },
+    {
+      "id": "pratoRaso",
+      "rotulo": "Pratos Rasos",
+      "descricao": "Pratos rasos para o centro do lugar"
+    },
+    {
+      "id": "pratoFundo",
+      "rotulo": "Pratos Fundos",
+      "descricao": "Pratos fundos e especiais sobre o prato raso"
+    }
+  ],
+  "itens": [
+    {
+      "id": "toalha-branco-linho",
+      "nome": "Branco linho",
+      "categoria": "toalha",
+      "padrao": "linen",
+      "cores": {
+        "primaria": "#f7f3ec",
+        "secundaria": "#ebe4d8",
+        "destaque": "#d9d0c2"
+      },
+      "descricao": "Linho branco natural"
+    },
+    {
+      "id": "toalha-marfim-classico",
+      "nome": "Marfim clássico",
+      "categoria": "toalha",
+      "padrao": "solid",
+      "cores": {
+        "primaria": "#f3ead8",
+        "secundaria": "#e8dcc4",
+        "destaque": "#d4c4a8"
+      },
+      "descricao": "Tom creme elegante"
+    },
+    {
+      "id": "toalha-azul-marinho",
+      "nome": "Azul marinho",
+      "categoria": "toalha",
+      "padrao": "solid",
+      "cores": {
+        "primaria": "#1a3358",
+        "secundaria": "#274870",
+        "destaque": "#0f1f36"
+      },
+      "descricao": "Azul profundo formal"
+    },
+    {
+      "id": "toalha-verde-eucalipto",
+      "nome": "Verde eucalipto",
+      "categoria": "toalha",
+      "padrao": "linen",
+      "cores": {
+        "primaria": "#8fa88a",
+        "secundaria": "#a8c0a2",
+        "destaque": "#6e8a68"
+      },
+      "descricao": "Verde suave botânico"
+    },
+    {
+      "id": "toalha-bordo-formal",
+      "nome": "Bordô formal",
+      "categoria": "toalha",
+      "padrao": "damask",
+      "cores": {
+        "primaria": "#6b2d3a",
+        "secundaria": "#8a3d4a",
+        "destaque": "#4a1c28"
+      },
+      "descricao": "Bordô com motivação sutil"
+    },
+    {
+      "id": "toalha-listras-preto-branco",
+      "nome": "Listras preto e branco",
+      "categoria": "toalha",
+      "padrao": "stripes",
+      "cores": {
+        "primaria": "#f8f6f2",
+        "secundaria": "#2a2a2a",
+        "destaque": "#e8e4de"
+      },
+      "descricao": "Listras clássicas"
+    },
+    {
+      "id": "toalha-xadrez-vichy",
+      "nome": "Xadrez vichy vermelho",
+      "categoria": "toalha",
+      "padrao": "gingham",
+      "cores": {
+        "primaria": "#f8f4f0",
+        "secundaria": "#c43c3c",
+        "destaque": "#e8d8d0"
+      },
+      "descricao": "Xadrez campestre"
+    },
+    {
+      "id": "toalha-rosa-poa",
+      "nome": "Rosa com poás",
+      "categoria": "toalha",
+      "padrao": "dots",
+      "cores": {
+        "primaria": "#f8e8ec",
+        "secundaria": "#e8a0b0",
+        "destaque": "#f0d0d8"
+      },
+      "descricao": "Rosa claro com poás"
+    },
+    {
+      "id": "toalha-dourado-festa",
+      "nome": "Dourado festa",
+      "categoria": "toalha",
+      "padrao": "border",
+      "cores": {
+        "primaria": "#f5ecd4",
+        "secundaria": "#c9a227",
+        "destaque": "#e8d8a8"
+      },
+      "descricao": "Dourado com barra decorativa"
+    },
+    {
+      "id": "toalha-cinza-grafite",
+      "nome": "Cinza grafite",
+      "categoria": "toalha",
+      "padrao": "herringbone",
+      "cores": {
+        "primaria": "#5a5e64",
+        "secundaria": "#6e747c",
+        "destaque": "#3e4248"
+      },
+      "descricao": "Cinza com textura espinha"
+    },
+    {
+      "id": "toalha-bege-natural",
+      "nome": "Bege natural",
+      "categoria": "toalha",
+      "padrao": "linen",
+      "cores": {
+        "primaria": "#d8c8b0",
+        "secundaria": "#e8dcc8",
+        "destaque": "#b8a488"
+      },
+      "descricao": "Bege de algodão cru"
+    },
+    {
+      "id": "toalha-azul-celeste",
+      "nome": "Azul celeste",
+      "categoria": "toalha",
+      "padrao": "stripes",
+      "cores": {
+        "primaria": "#d8eaf4",
+        "secundaria": "#7ab0d0",
+        "destaque": "#c0dcec"
+      },
+      "descricao": "Listras em azul claro"
+    },
+    {
+      "id": "lugarAmericano-capar-para-base-mdf-off-white-com-arabesco",
+      "nome": "Capar para Base MDF Off White com Arabesco",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Capar%20para%20Base%20MDF%20Off%20White%20com%20Arabesco.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 35,
+      "comprimento": 35
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-costela-de-adao",
+      "nome": "Lugar Americano Costela de Adão",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Costela%20de%20Ad%C3%A3o.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 35,
+      "comprimento": 48
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-folha-rose-dupla-face",
+      "nome": "Lugar Americano Folha Rosê Dupla Face",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Folha%20Ros%C3%AA%20Dupla%20Face.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 35,
+      "comprimento": 48
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-grama-sintetica",
+      "nome": "Lugar Americano Grama Sintética",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Grama%20Sint%C3%A9tica.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 35,
+      "comprimento": 48
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-linho-misto-bege",
+      "nome": "Lugar Americano Linho Misto Bege",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Linho%20Misto%20Bege.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 35,
+      "comprimento": 48
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-linhao-bege",
+      "nome": "Lugar Americano Linhão Bege",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Linh%C3%A3o%20Bege.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 35,
+      "comprimento": 48
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-organza-rosa-28x42cm-toalha-para-bandeja",
+      "nome": "Lugar Americano Organza Rosa 28x42cm (Toalha para Bandeja)",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Organza%20Rosa%2028x42cm%20(Toalha%20para%20Bandeja).png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 28,
+      "comprimento": 42
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-redondo-nylon-com-bordado-cru",
+      "nome": "Lugar Americano Redondo Nylon com Bordado Cru",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Redondo%20Nylon%20com%20Bordado%20Cru.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 38,
+      "comprimento": 38
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-redondo-nylon-com-bordado-lilas",
+      "nome": "Lugar Americano Redondo Nylon com Bordado Lilás",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Redondo%20Nylon%20com%20Bordado%20Lil%C3%A1s.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 38,
+      "comprimento": 38
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-redondo-renda-branco",
+      "nome": "Lugar Americano Redondo Renda Branco",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Redondo%20Renda%20Branco.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 38,
+      "comprimento": 38
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-redondo-verde-bordado",
+      "nome": "Lugar Americano Redondo Verde Bordado",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Redondo%20Verde%20Bordado.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 38,
+      "comprimento": 38
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-redondo-verde-com-festone",
+      "nome": "Lugar Americano Redondo Verde com Festonê",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Redondo%20Verde%20com%20Feston%C3%AA.jpg",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 38,
+      "comprimento": 38
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-redondo-com-bordado-azul",
+      "nome": "Lugar Americano Redondo com Bordado Azul",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Redondo%20com%20Bordado%20Azul.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 38,
+      "comprimento": 38
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-redondo-com-bordado-flor-branco",
+      "nome": "Lugar Americano Redondo com Bordado Flor Branco",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Redondo%20com%20Bordado%20Flor%20Branco.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 38,
+      "comprimento": 38
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-redondo-com-bordado-rosa",
+      "nome": "Lugar Americano Redondo com Bordado Rosa",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Redondo%20com%20Bordado%20Rosa.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 38,
+      "comprimento": 38
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-renda-bege",
+      "nome": "Lugar Americano Renda Bege",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Renda%20Bege.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 35,
+      "comprimento": 48
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-renda-branco",
+      "nome": "Lugar Americano Renda Branco",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Renda%20Branco.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 35,
+      "comprimento": 48
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-renda-verde-musgo",
+      "nome": "Lugar Americano Renda Verde Musgo",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Renda%20Verde%20Musgo.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 35,
+      "comprimento": 48
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-renda-verde",
+      "nome": "Lugar Americano Renda Verde",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Renda%20Verde.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 35,
+      "comprimento": 48
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-renda-vermelho",
+      "nome": "Lugar Americano Renda Vermelho",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Renda%20Vermelho.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 35,
+      "comprimento": 48
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-retangular-nylon-com-bordado-ocre",
+      "nome": "Lugar Americano Retangular Nylon com Bordado Ocre",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Retangular%20Nylon%20com%20Bordado%20Ocre.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 35,
+      "comprimento": 45
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-vermelho",
+      "nome": "Lugar Americano Vermelho",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20Vermelho.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 35,
+      "comprimento": 48
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-de-palha",
+      "nome": "Lugar Americano de Palha",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20Americano%20de%20Palha.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 35,
+      "comprimento": 48
+    },
+    {
+      "id": "lugarAmericano-lugar-americano-xadrez",
+      "nome": "Lugar americano Xadrez",
+      "categoria": "lugarAmericano",
+      "imagem": "/imgs/Lugares Americanos/Lugar%20americano%20Xadrez.png",
+      "cores": {
+        "primaria": "#e8dcc8",
+        "secundaria": "#f5efe4",
+        "destaque": "#c4b49a"
+      },
+      "largura": 35,
+      "comprimento": 48
+    },
+    {
+      "id": "sousplat-base-mdf-35cm",
+      "nome": "Base MDF 35cm",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Base%20MDF%2035cm.jpg",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 35,
+      "comprimento": 35
+    },
+    {
+      "id": "sousplat-mini-sousplat-25cm-azul",
+      "nome": "Mini Sousplat 25cm Azul",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Mini%20Sousplat%2025cm%20Azul.jpg",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 25,
+      "comprimento": 25
+    },
+    {
+      "id": "sousplat-mini-sousplat-25cm-lilas",
+      "nome": "Mini Sousplat 25cm Lilás",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Mini%20Sousplat%2025cm%20Lil%C3%A1s.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 25,
+      "comprimento": 25
+    },
+    {
+      "id": "sousplat-mini-sousplat-25cm-rose",
+      "nome": "Mini Sousplat 25cm Rosé",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Mini%20Sousplat%2025cm%20Ros%C3%A9.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 25,
+      "comprimento": 25
+    },
+    {
+      "id": "sousplat-mini-sousplat-25cm-verde",
+      "nome": "Mini Sousplat 25cm Verde",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Mini%20Sousplat%2025cm%20Verde.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 25,
+      "comprimento": 25
+    },
+    {
+      "id": "sousplat-mini-sousplat-dourado-25cm",
+      "nome": "Mini Sousplat Dourado 25cm",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Mini%20Sousplat%20Dourado%2025cm.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 25,
+      "comprimento": 25
+    },
+    {
+      "id": "sousplat-mini-sousplat-prata-25cm",
+      "nome": "Mini Sousplat Prata 25cm",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Mini%20Sousplat%20Prata%2025cm.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 25,
+      "comprimento": 25
+    },
+    {
+      "id": "sousplat-sousplat-antique-home-style-2",
+      "nome": "Sousplat Antique Home Style 2",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Antique%20Home%20Style%202.jpg",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-antique-home-style-3",
+      "nome": "Sousplat Antique Home Style 3",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Antique%20Home%20Style%203.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-antique-home-style",
+      "nome": "Sousplat Antique Home Style",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Antique%20Home%20Style.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-arabesco-dourado",
+      "nome": "Sousplat Arabesco Dourado",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Arabesco%20Dourado.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-arabesco-fendi",
+      "nome": "Sousplat Arabesco Fendi",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Arabesco%20Fendi.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-arabesco-prata",
+      "nome": "Sousplat Arabesco Prata",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Arabesco%20Prata.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-arabesco-rosa",
+      "nome": "Sousplat Arabesco Rosa",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Arabesco%20Rosa.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-basic-azul-marinho",
+      "nome": "Sousplat Basic Azul Marinho",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Basic%20Azul%20Marinho.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-basic-camurca",
+      "nome": "Sousplat Basic Camurça",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Basic%20Camur%C3%A7a.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-basic-verde-eucalipto",
+      "nome": "Sousplat Basic Verde Eucalipto",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Basic%20Verde%20Eucalipto.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-branco",
+      "nome": "Sousplat Branco",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Branco.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-delicate-azul-bebe",
+      "nome": "Sousplat Delicate Azul Bebê",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Delicate%20Azul%20Beb%C3%AA.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-delicate-lilas",
+      "nome": "Sousplat Delicate Lilás",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Delicate%20Lil%C3%A1s.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-delicate-rosa-bebe",
+      "nome": "Sousplat Delicate Rosa Bebê",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Delicate%20Rosa%20Beb%C3%AA.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-delicate-verde",
+      "nome": "Sousplat Delicate Verde",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Delicate%20Verde.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-detroit-fiber-38cm-sisal",
+      "nome": "Sousplat Detroit Fiber 38cm - Sisal",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Detroit%20Fiber%2038cm%20-%20Sisal.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 38,
+      "comprimento": 38
+    },
+    {
+      "id": "sousplat-sousplat-dourado-brilho",
+      "nome": "Sousplat Dourado Brilho",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Dourado%20Brilho.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-petit-25cm-algodao-rosa",
+      "nome": "Sousplat Petit 25cm Algodão Rosa",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Petit%2025cm%20Algod%C3%A3o%20Rosa.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 25,
+      "comprimento": 25
+    },
+    {
+      "id": "sousplat-sousplat-petit-25cm-capuccino",
+      "nome": "Sousplat Petit 25cm Capuccino",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Petit%2025cm%20Capuccino.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 25,
+      "comprimento": 25
+    },
+    {
+      "id": "sousplat-sousplat-petit-25cm-julie-rosa",
+      "nome": "Sousplat Petit 25cm Julie Rosa",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Petit%2025cm%20Julie%20Rosa.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 25,
+      "comprimento": 25
+    },
+    {
+      "id": "sousplat-sousplat-plissado-home-style",
+      "nome": "Sousplat Plissado Home Style",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Plissado%20Home%20Style.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-preto",
+      "nome": "Sousplat Preto",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Preto.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-vermelho-brilho",
+      "nome": "Sousplat Vermelho Brilho",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Vermelho%20Brilho.jpg",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-vermelho-cronus",
+      "nome": "Sousplat Vermelho Cronus",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20Vermelho%20Cronus.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-de-cristal-pearl-wolff",
+      "nome": "Sousplat de Cristal Pearl Wolff",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20de%20Cristal%20Pearl%20Wolff.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 33,
+      "comprimento": 33
+    },
+    {
+      "id": "sousplat-sousplat-de-sisal-32cm",
+      "nome": "Sousplat de Sisal 32cm",
+      "categoria": "sousplat",
+      "imagem": "/imgs/Sousplats/Sousplat%20de%20Sisal%2032cm.png",
+      "cores": {
+        "primaria": "#c4a574",
+        "secundaria": "#e8d4b0",
+        "destaque": "#8b6914"
+      },
+      "largura": 32,
+      "comprimento": 32
+    },
+    {
+      "id": "pratoRaso-prato-raso-bunny-cenoura",
+      "nome": "Prato Raso Bunny - Cenoura",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Bunny%20-%20Cenoura.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 28,
+      "comprimento": 28
+    },
+    {
+      "id": "pratoRaso-prato-raso-celebrate-bege",
+      "nome": "Prato Raso Celebrate Bege",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Celebrate%20Bege.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 28,
+      "comprimento": 28
+    },
+    {
+      "id": "pratoRaso-prato-raso-celebrate-verde",
+      "nome": "Prato Raso Celebrate Verde",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Celebrate%20Verde.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 28,
+      "comprimento": 28
+    },
+    {
+      "id": "pratoRaso-prato-raso-celebrate-vermelho",
+      "nome": "Prato Raso Celebrate Vermelho",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Celebrate%20Vermelho.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 28,
+      "comprimento": 28
+    },
+    {
+      "id": "pratoRaso-prato-raso-coelha-rosa",
+      "nome": "Prato Raso Coelha Rosa",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Coelha%20Rosa.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 28,
+      "comprimento": 28
+    },
+    {
+      "id": "pratoRaso-prato-raso-coup-navy",
+      "nome": "Prato Raso Coup Navy",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Coup%20Navy.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 28,
+      "comprimento": 28
+    },
+    {
+      "id": "pratoRaso-prato-raso-cristal-pearl",
+      "nome": "Prato Raso Cristal Pearl",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Cristal%20Pearl.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 28,
+      "comprimento": 28
+    },
+    {
+      "id": "pratoRaso-prato-raso-flamingo-diamond-filete-de-prata",
+      "nome": "Prato Raso Flamingo Diamond Filete de Prata",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Flamingo%20Diamond%20Filete%20de%20Prata.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 28,
+      "comprimento": 28
+    },
+    {
+      "id": "pratoRaso-prato-raso-flora-dalia",
+      "nome": "Prato Raso Flora Dalia",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Flora%20Dalia.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 28,
+      "comprimento": 28
+    },
+    {
+      "id": "pratoRaso-prato-raso-mar",
+      "nome": "Prato Raso Mar",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Mar.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 28,
+      "comprimento": 28
+    },
+    {
+      "id": "pratoRaso-prato-raso-nobre",
+      "nome": "Prato Raso Nobre",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Nobre.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 28,
+      "comprimento": 28
+    },
+    {
+      "id": "pratoRaso-prato-raso-roma-2",
+      "nome": "Prato Raso Roma 2",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Roma%202.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 28,
+      "comprimento": 28
+    },
+    {
+      "id": "pratoRaso-prato-raso-roma",
+      "nome": "Prato Raso Roma",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Roma.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 28,
+      "comprimento": 28
+    },
+    {
+      "id": "pratoRaso-prato-raso-stripes-rosa-29cm",
+      "nome": "Prato Raso Stripes Rosa 29cm",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Stripes%20Rosa%2029cm.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 29,
+      "comprimento": 29
+    },
+    {
+      "id": "pratoRaso-prato-raso-unni-avela",
+      "nome": "Prato Raso Unni Avelã",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Unni%20Avel%C3%A3.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 28,
+      "comprimento": 28
+    },
+    {
+      "id": "pratoRaso-prato-raso-verde-esmeralda-29cm",
+      "nome": "Prato Raso Verde Esmeralda 29cm",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Verde%20Esmeralda%2029cm.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 29,
+      "comprimento": 29
+    },
+    {
+      "id": "pratoRaso-prato-raso-vivant-areia-27cm",
+      "nome": "Prato Raso Vivant Areia 27cm",
+      "categoria": "pratoRaso",
+      "imagem": "/imgs/Pratos Rasos/Prato%20Raso%20Vivant%20Areia%2027cm.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 27,
+      "comprimento": 27
+    },
+    {
+      "id": "pratoFundo-prato-coracao-funny",
+      "nome": "Prato Coração Funny",
+      "categoria": "pratoFundo",
+      "imagem": "/imgs/Pratos Fundos/Prato%20Cora%C3%A7%C3%A3o%20Funny.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 22,
+      "comprimento": 22
+    },
+    {
+      "id": "pratoFundo-prato-fundo-frutos-do-mar",
+      "nome": "Prato Fundo Frutos do Mar",
+      "categoria": "pratoFundo",
+      "imagem": "/imgs/Pratos Fundos/Prato%20Fundo%20Frutos%20do%20Mar.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 22,
+      "comprimento": 22
+    },
+    {
+      "id": "pratoFundo-prato-para-risoto",
+      "nome": "Prato para Risoto",
+      "categoria": "pratoFundo",
+      "imagem": "/imgs/Pratos Fundos/Prato%20para%20Risoto.png",
+      "cores": {
+        "primaria": "#faf8f5",
+        "secundaria": "#e8e4df",
+        "destaque": "#d0cbc4"
+      },
+      "largura": 22,
+      "comprimento": 22
+    }
+  ]
+}
