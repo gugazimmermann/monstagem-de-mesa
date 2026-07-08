@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react'
 import type { Categoria, ConfiguracaoMesa, IdCategoria, ItemMesa } from '../../../../compartilhado/tipos'
-import { useCatalogo } from '../../../catalogo'
+import { obterItensPorCategoria } from '../../../catalogo'
 import { formatarDimensoes, temDimensoes } from '../../../../compartilhado/utils/dimensoes'
 import './SeletorItens.css'
 
@@ -46,7 +46,6 @@ export function SeletorItens({
   aoMudarCategoria,
   aoSelecionar,
 }: PropsSeletorItens) {
-  const { obterItensPorCategoria } = useCatalogo()
   const itensCategoria = obterItensPorCategoria(categoriaAtiva)
   const metaAtiva = categorias.find((c) => c.id === categoriaAtiva)
   const idSelecionado = configuracao[categoriaAtiva]

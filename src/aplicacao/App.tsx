@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { PreVisualizacaoMesa, SeletorItens } from '../funcionalidades/mesa'
-import { useCatalogo } from '../funcionalidades/catalogo'
+import { categorias, configuracaoVazia, obterItemPorId } from '../funcionalidades/catalogo'
 import type { ConfiguracaoMesa, IdCategoria } from '../compartilhado/tipos'
 import './App.css'
 
@@ -8,7 +8,6 @@ const nomeMarca = 'Raffiner'
 const logoMarca = '/logo/logo_h.webp'
 
 export default function App() {
-  const { categorias, configuracaoVazia, obterItemPorId, carregando, erro } = useCatalogo()
   const [configuracao, setConfiguracao] = useState<ConfiguracaoMesa>(configuracaoVazia)
   const [categoriaAtiva, setCategoriaAtiva] = useState<IdCategoria>('toalha')
 
@@ -36,35 +35,6 @@ export default function App() {
       return item ? { categoria: categoria.rotulo, item: item.nome } : null
     })
     .filter(Boolean) as { categoria: string; item: string }[]
-
-  if (carregando) {
-    return (
-      <div className="app">
-        <header className="app__header">
-          <div>
-            <img className="app__logo" src={logoMarca} alt={nomeMarca} />
-            <h1>Montagem de Mesa</h1>
-            <p className="app__subtitle">Carregando catálogo…</p>
-          </div>
-        </header>
-      </div>
-    )
-  }
-
-  if (erro) {
-    return (
-      <div className="app">
-        <header className="app__header">
-          <div>
-            <img className="app__logo" src={logoMarca} alt={nomeMarca} />
-            <h1>Montagem de Mesa</h1>
-            <p className="app__subtitle">Não foi possível carregar o catálogo.</p>
-            <p className="app__subtitle">{erro}</p>
-          </div>
-        </header>
-      </div>
-    )
-  }
 
   return (
     <div className="app">
@@ -112,4 +82,3 @@ export default function App() {
     </div>
   )
 }
-

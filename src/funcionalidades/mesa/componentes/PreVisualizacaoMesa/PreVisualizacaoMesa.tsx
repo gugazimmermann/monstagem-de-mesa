@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react'
 import type { ConfiguracaoMesa, ItemMesa } from '../../../../compartilhado/tipos'
-import { useCatalogo } from '../../../catalogo'
+import { obterItemPorId } from '../../../catalogo'
 import {
   estiloCamadaDimensionada,
   itemRedondo,
@@ -97,7 +97,6 @@ function CamadaPrato({
 }
 
 export function PreVisualizacaoMesa({ configuracao }: PropsPreVisualizacaoMesa) {
-  const { obterItemPorId } = useCatalogo()
   const toalha = obterItemPorId(configuracao.toalha)
   const lugarAmericano = obterItemPorId(configuracao.lugarAmericano)
   const sousplat = obterItemPorId(configuracao.sousplat)

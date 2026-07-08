@@ -2,89 +2,52 @@
 
 Aplicação web (React + Vite + TypeScript) para **montar uma composição de mesa** escolhendo peças por categoria (toalha, lugar americano, sousplat, pratos etc.) e vendo a **pré-visualização** conforme você seleciona.
 
-O **catálogo de itens** é carregado de uma **API mock** (emulando banco de dados) com `json-server` em desenvolvimento e pelo `server.mjs` em produção.
+O catálogo fica em um **arquivo JSON** (`src/dados/catalogo.json`) importado diretamente pelo app — sem API, sem banco de dados e sem servidor backend.
 
-## Principais conceitos do sistema
-
-- **Catálogo (mock DB)**: o “banco” é um arquivo JSON (`db/db.json`).
-  - Endpoints:
-    - `GET /api/categorias`
-    - `GET /api/itens`
-- **Frontend consumindo API**: o app faz `fetch` em `/api/categorias` e `/api/itens`.
-  - No desenvolvimento, o Vite faz **proxy** de `/api/*` para `http://localhost:3001/*`.
-  - Em produção, o `server.mjs` serve o frontend (`dist/`) e a API no mesmo domínio.
-- **Regras de seleção**: lugar americano e sousplat são **mutuamente exclusivos** (selecionar um remove o outro).
-
-## Como rodar (desenvolvimento)
+## Como rodar
 
 Pré-requisitos: Node.js + npm.
 
-1) Instalar dependências:
-
 ```bash
 npm install
+npm run dev
 ```
 
-2) Gerar o “banco” (`db/db.json`) a partir do catálogo local:
+Abra a URL exibida no terminal (geralmente `http://localhost:5173`).
 
-```bash
-npm run db:gen
-```
-
-3) Subir a API mock + frontend juntos:
-
-```bash
-npm run dev:full
-```
-
-- A API mock sobe em `http://localhost:3001`.
-- O Vite pode usar outra porta caso `5173` esteja ocupada (ele mostra a URL no terminal).
-- Abra a URL do **Vite** (ex.: `http://localhost:5173/`), não a do json-server (`http://localhost:3001`).
-
-## Como rodar (produção local)
-
-```bash
-npm run db:gen
-npm run build
-npm start
-```
-
-Abra `http://localhost:3000`.
-
-## Deploy no Render
-
-**Importante:** não use **Static Site** sozinho. O app precisa de um servidor Node para expor `/api/*`.
-
-Crie um **Web Service** (Node):
+## Deploy no Render (Static Site)
 
 | Campo | Valor |
 |-------|-------|
-| **Build Command** | `npm install && npm run db:gen && npm run build` |
-| **Start Command** | `npm start` |
-| **Environment** | Node |
+| **Build Command** | `npm install && npm run build` |
+| **Publish Directory** | `dist` |
 
-O Render define a variável `PORT` automaticamente. O `server.mjs` usa essa porta.
+Não é necessário Start Command.
+
+## Editar o catálogo
+
+Edite `src/dados/catalogo.json`. O arquivo contém:
+
+- `categorias`: lista de categorias (toalha, sousplat, etc.)
+- `itens`: lista de produtos com nome, cores, imagem e dimensões
+
+Depois de alterar, rode `npm run dev` ou `npm run build` para ver as mudanças.
 
 ## Scripts úteis
 
-- `npm run dev`: sobe o Vite.
-- `npm run db`: sobe o `json-server` apontando para `db/db.json`.
-- `npm run db:gen`: gera/atualiza `db/db.json` a partir do catálogo local.
-- `npm run dev:full`: roda `db` + `dev` em paralelo.
-- `npm run build`: build de produção.
-- `npm start`: sobe o servidor de produção (`server.mjs`).
-- `npm run preview`: pré-visualiza build (só frontend, sem API).
-- `npm run lint`: roda `oxlint`.
+- `npm run dev` — desenvolvimento com hot reload
+- `npm run build` — build de produção (`dist/`)
+- `npm run preview` — pré-visualiza o build localmente
+- `npm run lint` — roda o oxlint
 
-## Estrutura (alto nível)
+## Estrutura
 
-- `src/aplicacao/App.tsx`: tela principal (tabs de categorias, resumo e seleção).
-- `src/funcionalidades/catalogo/*`: carregamento do catálogo via API, provider e exports.
-- `src/funcionalidades/mesa/*`: componentes de seleção (`SeletorItens`) e preview (`PreVisualizacaoMesa`).
-- `db/db.json`: “banco” servido pela API.
-- `scripts/gerar-db.ts`: gerador do `db/db.json`.
-- `server.mjs`: servidor de produção (frontend + API).
+- `src/aplicacao/App.tsx` — tela principal
+- `src/dados/catalogo.json` — catálogo de itens
+- `src/funcionalidades/catalogo/` — funções de acesso ao catálogo
+- `src/funcionalidades/mesa/` — seletor de itens e pré-visualização da mesa
+- `public/imgs/` — fotos dos produtos
 
-## Observações
+## Regras do app
 
-- O app está configurado como **read-only** do ponto de vista da UI (sem CRUD).
+- Lugar americano e sousplat são **mutuamente exclusivos** (selecionar um remove o outro).
