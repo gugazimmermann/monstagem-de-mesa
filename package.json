@@ -9,6 +9,7 @@
     "db": "json-server --watch db/db.json --port 3001",
     "dev:full": "concurrently -k \"npm run db\" \"npm run dev\"",
     "build": "tsc -b && vite build",
+    "start": "node server.mjs",
     "lint": "oxlint",
     "preview": "vite preview"
   },
