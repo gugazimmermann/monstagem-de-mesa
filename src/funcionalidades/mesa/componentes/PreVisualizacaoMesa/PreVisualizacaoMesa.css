@@ -142,11 +142,11 @@
 
 .place-setting {
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 360px;
+  height: 360px;
   z-index: 2;
   --preview-reference-cm: 48;
-  --preview-scale: 0.88;
+  --preview-scale: 0.95;
 }
 
 .table-preview__empty {
@@ -300,8 +300,8 @@
   }
 
   .place-setting {
-    width: 220px;
-    height: 220px;
+    width: 280px;
+    height: 280px;
   }
 }
 
