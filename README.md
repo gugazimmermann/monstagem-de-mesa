@@ -21,7 +21,7 @@ Abra a URL exibida no terminal (geralmente `http://localhost:5173`).
 |------|-----------|
 | `/` | Redireciona para `/c/raffiner` |
 | `/c/:slug` | Montagem pública do cliente |
-| `/admin` | Login do cliente |
+| `/admin` ou `/entrar` | Login do cliente |
 | `/admin/painel` | Painel (nome, logo, CRUD de categorias) |
 
 Credenciais seed do Raffiner: login `raffiner` / senha `admin123`.
@@ -51,6 +51,10 @@ No Dashboard do serviço → **Redirects/Rewrites** → adicionar:
 | Source | Destination | Action |
 |--------|-------------|--------|
 | `/*` | `/index.html` | **Rewrite** |
+
+Use **Rewrite**, não Redirect. Redirect (301) quebra rotas da SPA e fica em cache no navegador.
+
+Se `/admin` abrir a montagem em vez do login, limpe o cache do site ou use `/entrar` em aba anônima.
 
 O arquivo [`render.yaml`](render.yaml) já declara essa regra para deploys via Blueprint.
 

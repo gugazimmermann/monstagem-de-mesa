@@ -15,6 +15,7 @@ export function Rotas() {
       <Route path="/" element={<Navigate to="/c/raffiner" replace />} />
       <Route path="/c/:slug" element={<PaginaCliente />} />
       <Route path="/admin" element={<LoginAdmin />} />
+      <Route path="/entrar" element={<LoginAdmin />} />
       <Route
         path="/admin/painel"
         element={
