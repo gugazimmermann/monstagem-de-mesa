@@ -1,7 +1,5 @@
 export {
-  categorias,
-  configuracaoVazia,
+  criarConfiguracaoVazia,
   obterItemPorId,
   obterItensPorCategoria,
-  itens,
 } from './catalogo'

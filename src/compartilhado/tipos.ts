@@ -1,9 +1,4 @@
-export type IdCategoria =
-  | 'toalha'
-  | 'lugarAmericano'
-  | 'sousplat'
-  | 'pratoRaso'
-  | 'pratoFundo'
+export type IdCategoria = string
 
 export type PadraoTecido =
   | 'solid'
@@ -41,7 +36,7 @@ export interface ItemMesa {
   descricao?: string
 }
 
-export type ConfiguracaoMesa = Record<IdCategoria, string | null>
+export type ConfiguracaoMesa = Record<string, string | null>
 
 export interface Categoria {
   id: IdCategoria
@@ -49,3 +44,23 @@ export interface Categoria {
   descricao: string
 }
 
+export interface Cliente {
+  id: string
+  slug: string
+  login: string
+  senha: string
+  nome: string
+  logo: string
+}
+
+export interface DadosCliente {
+  nome: string
+  logo: string
+  categorias: Categoria[]
+  itens: ItemMesa[]
+}
+
+export interface Credenciais {
+  login: string
+  senha: string
+}

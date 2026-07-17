@@ -6,6 +6,7 @@ import './SeletorItens.css'
 
 interface PropsSeletorItens {
   categorias: Categoria[]
+  itens: ItemMesa[]
   categoriaAtiva: IdCategoria
   configuracao: ConfiguracaoMesa
   aoMudarCategoria: (categoria: IdCategoria) => void
@@ -41,12 +42,13 @@ function AmostraItem({ item }: { item: ItemMesa }) {
 
 export function SeletorItens({
   categorias,
+  itens,
   categoriaAtiva,
   configuracao,
   aoMudarCategoria,
   aoSelecionar,
 }: PropsSeletorItens) {
-  const itensCategoria = obterItensPorCategoria(categoriaAtiva)
+  const itensCategoria = obterItensPorCategoria(itens, categoriaAtiva)
   const metaAtiva = categorias.find((c) => c.id === categoriaAtiva)
   const idSelecionado = configuracao[categoriaAtiva]
 
@@ -88,36 +90,39 @@ export function SeletorItens({
           )}
         </header>
 
-        <ul className="item-picker__grid">
-          {itensCategoria.map((item) => {
-            const selecionado = idSelecionado === item.id
+        {itensCategoria.length === 0 ? (
+          <p className="item-picker__empty">Nenhum item nesta categoria.</p>
+        ) : (
+          <ul className="item-picker__grid">
+            {itensCategoria.map((item) => {
+              const selecionado = idSelecionado === item.id
 
-            return (
-              <li key={item.id}>
-                <button
-                  type="button"
-                  className={`item-card ${selecionado ? 'is-selected' : ''}`}
-                  onClick={() => aoSelecionar(categoriaAtiva, item.id)}
-                  aria-pressed={selecionado}
-                >
-                  <AmostraItem item={item} />
-                  <span className="item-card__body">
-                    <span className="item-card__name">{item.nome}</span>
-                    {temDimensoes(item) && (
-                      <span className="item-card__size">{formatarDimensoes(item)}</span>
-                    )}
-                    {item.descricao && (
-                      <span className="item-card__desc">{item.descricao}</span>
-                    )}
-                  </span>
-                  {selecionado && <span className="item-card__check" aria-hidden="true">✓</span>}
-                </button>
-              </li>
-            )
-          })}
-        </ul>
+              return (
+                <li key={item.id}>
+                  <button
+                    type="button"
+                    className={`item-card ${selecionado ? 'is-selected' : ''}`}
+                    onClick={() => aoSelecionar(categoriaAtiva, item.id)}
+                    aria-pressed={selecionado}
+                  >
+                    <AmostraItem item={item} />
+                    <span className="item-card__body">
+                      <span className="item-card__name">{item.nome}</span>
+                      {temDimensoes(item) && (
+                        <span className="item-card__size">{formatarDimensoes(item)}</span>
+                      )}
+                      {item.descricao && (
+                        <span className="item-card__desc">{item.descricao}</span>
+                      )}
+                    </span>
+                    {selecionado && <span className="item-card__check" aria-hidden="true">✓</span>}
+                  </button>
+                </li>
+              )
+            })}
+          </ul>
+        )}
       </div>
     </div>
   )
 }
-

@@ -1,23 +1,18 @@
 import type { Categoria, ConfiguracaoMesa, IdCategoria, ItemMesa } from '../../compartilhado/tipos'
-import dados from '../../dados/catalogo.json'
 
-export const categorias = dados.categorias as Categoria[]
-export const itens = dados.itens as ItemMesa[]
-
-/** Mesa vazia — estado inicial e resultado de "Limpar tudo" */
-export const configuracaoVazia: ConfiguracaoMesa = {
-  toalha: null,
-  lugarAmericano: null,
-  sousplat: null,
-  pratoRaso: null,
-  pratoFundo: null,
+/** Mesa vazia a partir das categorias do cliente */
+export function criarConfiguracaoVazia(categorias: Categoria[]): ConfiguracaoMesa {
+  return Object.fromEntries(categorias.map((c) => [c.id, null]))
 }
 
-export function obterItemPorId(id: string | null): ItemMesa | null {
+export function obterItemPorId(itens: ItemMesa[], id: string | null): ItemMesa | null {
   if (!id) return null
   return itens.find((item) => item.id === id) ?? null
 }
 
-export function obterItensPorCategoria(idCategoria: IdCategoria): ItemMesa[] {
+export function obterItensPorCategoria(
+  itens: ItemMesa[],
+  idCategoria: IdCategoria,
+): ItemMesa[] {
   return itens.filter((item) => item.categoria === idCategoria)
 }

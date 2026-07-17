@@ -10,6 +10,7 @@ import './PreVisualizacaoMesa.css'
 
 interface PropsPreVisualizacaoMesa {
   configuracao: ConfiguracaoMesa
+  itens: ItemMesa[]
 }
 
 function varsCores(item: ItemMesa): CSSProperties {
@@ -96,12 +97,12 @@ function CamadaPrato({
   )
 }
 
-export function PreVisualizacaoMesa({ configuracao }: PropsPreVisualizacaoMesa) {
-  const toalha = obterItemPorId(configuracao.toalha)
-  const lugarAmericano = obterItemPorId(configuracao.lugarAmericano)
-  const sousplat = obterItemPorId(configuracao.sousplat)
-  const pratoRaso = obterItemPorId(configuracao.pratoRaso)
-  const pratoFundo = obterItemPorId(configuracao.pratoFundo)
+export function PreVisualizacaoMesa({ configuracao, itens }: PropsPreVisualizacaoMesa) {
+  const toalha = obterItemPorId(itens, configuracao.toalha ?? null)
+  const lugarAmericano = obterItemPorId(itens, configuracao.lugarAmericano ?? null)
+  const sousplat = obterItemPorId(itens, configuracao.sousplat ?? null)
+  const pratoRaso = obterItemPorId(itens, configuracao.pratoRaso ?? null)
+  const pratoFundo = obterItemPorId(itens, configuracao.pratoFundo ?? null)
 
   const camadaBase = lugarAmericano ?? sousplat
 
@@ -132,4 +133,3 @@ export function PreVisualizacaoMesa({ configuracao }: PropsPreVisualizacaoMesa) 
     </div>
   )
 }
-

@@ -1,8 +1,8 @@
 # Montagem de Mesa
 
-Aplicação web (React + Vite + TypeScript) para **montar uma composição de mesa** escolhendo peças por categoria (toalha, lugar americano, sousplat, pratos etc.) e vendo a **pré-visualização** conforme você seleciona.
+Aplicação web (React + Vite + TypeScript) para **montar uma composição de mesa** escolhendo peças por categoria e vendo a **pré-visualização** conforme você seleciona.
 
-O catálogo fica em um **arquivo JSON** (`src/dados/catalogo.json`) importado diretamente pelo app — sem API, sem banco de dados e sem servidor backend.
+Suporta **vários clientes**: cada um tem login no admin, nome/logo próprios e categorias editáveis. Os dados ficam em **JSON de seed** + **localStorage** (sem banco de dados).
 
 ## Como rodar
 
@@ -15,6 +15,28 @@ npm run dev
 
 Abra a URL exibida no terminal (geralmente `http://localhost:5173`).
 
+## Rotas
+
+| Rota | Descrição |
+|------|-----------|
+| `/` | Redireciona para `/c/raffiner` |
+| `/c/:slug` | Montagem pública do cliente |
+| `/admin` | Login do cliente |
+| `/admin/painel` | Painel (nome, logo, CRUD de categorias) |
+
+Credenciais seed do Raffiner: login `raffiner` / senha `admin123`.
+
+## Dados e persistência
+
+- [`src/dados/clientes.json`](src/dados/clientes.json) — lista de clientes (login, senha, slug, nome e logo iniciais)
+- [`src/dados/catalogo.json`](src/dados/catalogo.json) — catálogo seed do Raffiner (categorias + itens)
+- Após o primeiro acesso, o perfil e o catálogo de cada cliente são gravados em `localStorage` (`montagem:cliente:{id}`)
+- A sessão do admin fica em `sessionStorage`
+
+Alterações feitas no painel valem **só naquele navegador**. Limpar o storage do site volta ao seed.
+
+Para cadastrar outro cliente, adicione um objeto em `clientes.json` e recarregue (o catálogo inicial será vazio até você criar categorias no admin).
+
 ## Deploy no Render (Static Site)
 
 | Campo | Valor |
@@ -22,16 +44,7 @@ Abra a URL exibida no terminal (geralmente `http://localhost:5173`).
 | **Build Command** | `npm install && npm run build` |
 | **Publish Directory** | `dist` |
 
-Não é necessário Start Command.
-
-## Editar o catálogo
-
-Edite `src/dados/catalogo.json`. O arquivo contém:
-
-- `categorias`: lista de categorias (toalha, sousplat, etc.)
-- `itens`: lista de produtos com nome, cores, imagem e dimensões
-
-Depois de alterar, rode `npm run dev` ou `npm run build` para ver as mudanças.
+Como é uma SPA com rotas (`/admin`, `/c/*`), configure **rewrite** de todas as rotas para `index.html` (no Render: *Rewrite* / *Redirects* → `/*` → `/index.html` com status `200`).
 
 ## Scripts úteis
 
@@ -42,12 +55,13 @@ Depois de alterar, rode `npm run dev` ou `npm run build` para ver as mudanças.
 
 ## Estrutura
 
-- `src/aplicacao/App.tsx` — tela principal
-- `src/dados/catalogo.json` — catálogo de itens
-- `src/funcionalidades/catalogo/` — funções de acesso ao catálogo
-- `src/funcionalidades/mesa/` — seletor de itens e pré-visualização da mesa
-- `public/imgs/` — fotos dos produtos
+- `src/aplicacao/` — rotas e tela pública da montagem
+- `src/dados/` — JSON seed + repositório localStorage
+- `src/funcionalidades/admin/` — login e painel
+- `src/funcionalidades/autenticacao/` — rota protegida
+- `src/funcionalidades/catalogo/` — helpers do catálogo
+- `src/funcionalidades/mesa/` — seletor e pré-visualização
 
 ## Regras do app
 
-- Lugar americano e sousplat são **mutuamente exclusivos** (selecionar um remove o outro).
+- Lugar americano e sousplat são **mutuamente exclusivos** quando ambas as categorias existem (ids `lugarAmericano` e `sousplat`).

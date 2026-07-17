@@ -1,7 +1,7 @@
 import type { CSSProperties } from 'react'
-import type { DimensoesItem, IdCategoria, ItemMesa } from '../tipos'
+import type { DimensoesItem, ItemMesa } from '../tipos'
 
-type CategoriaMedida = Exclude<IdCategoria, 'toalha'>
+type CategoriaMedida = 'sousplat' | 'lugarAmericano' | 'pratoRaso' | 'pratoFundo'
 
 const PADROES_CATEGORIA: Record<CategoriaMedida, DimensoesItem> = {
   sousplat: { largura: 33, comprimento: 33 },
@@ -17,13 +17,16 @@ const PADROES_REDONDO: Partial<Record<CategoriaMedida, number>> = {
   pratoFundo: 22,
 }
 
+const FALLBACK_MEDIDA: DimensoesItem = { largura: 30, comprimento: 30 }
+
+function ehCategoriaMedida(categoria: string): categoria is CategoriaMedida {
+  return categoria in PADROES_CATEGORIA
+}
+
 /** Referência visual: maior peça (comprimento) mapeada à área do lugar */
 export const REFERENCIA_PREVIEW_CM = 48
 
-export function inferirDimensoes(
-  nome: string,
-  categoria: CategoriaMedida,
-): DimensoesItem {
+export function inferirDimensoes(nome: string, categoria: string): DimensoesItem {
   const matchRet = nome.match(/(\d+)\s*x\s*(\d+)\s*cm/i)
   if (matchRet) {
     return {
@@ -38,8 +41,14 @@ export function inferirDimensoes(
     return { largura: diametro, comprimento: diametro }
   }
 
+  const padraoCategoria = ehCategoriaMedida(categoria)
+    ? PADROES_CATEGORIA[categoria]
+    : FALLBACK_MEDIDA
+
   if (/redondo/i.test(nome)) {
-    const diametro = PADROES_REDONDO[categoria] ?? PADROES_CATEGORIA[categoria].largura
+    const diametro = ehCategoriaMedida(categoria)
+      ? (PADROES_REDONDO[categoria] ?? padraoCategoria.largura)
+      : padraoCategoria.largura
     return { largura: diametro, comprimento: diametro }
   }
 
@@ -55,7 +64,7 @@ export function inferirDimensoes(
     return { largura: 25, comprimento: 25 }
   }
 
-  return { ...PADROES_CATEGORIA[categoria] }
+  return { ...padraoCategoria }
 }
 
 export function temDimensoes(
@@ -85,4 +94,3 @@ export function estiloCamadaDimensionada(item: ItemMesa & DimensoesItem): CSSPro
     '--item-comprimento': item.comprimento,
   } as CSSProperties
 }
-

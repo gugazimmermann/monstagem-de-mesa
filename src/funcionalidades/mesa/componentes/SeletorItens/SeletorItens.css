@@ -5,6 +5,13 @@
   height: 100%;
 }
 
+.item-picker__empty {
+  margin: 0;
+  padding: 1rem 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
 .item-picker__tabs {
   display: flex;
   flex-wrap: wrap;
