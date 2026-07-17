@@ -44,7 +44,15 @@ Para cadastrar outro cliente, adicione um objeto em `clientes.json` e recarregue
 | **Build Command** | `npm install && npm run build` |
 | **Publish Directory** | `dist` |
 
-Como é uma SPA com rotas (`/admin`, `/c/*`), configure **rewrite** de todas as rotas para `index.html` (no Render: *Rewrite* / *Redirects* → `/*` → `/index.html` com status `200`).
+Como é uma SPA com rotas (`/admin`, `/c/*`), é **obrigatório** um rewrite para `index.html`. Sem isso, só `/` funciona; `/admin` e `/c/raffiner` retornam 404 ao abrir direto ou atualizar a página.
+
+No Dashboard do serviço → **Redirects/Rewrites** → adicionar:
+
+| Source | Destination | Action |
+|--------|-------------|--------|
+| `/*` | `/index.html` | **Rewrite** |
+
+O arquivo [`render.yaml`](render.yaml) já declara essa regra para deploys via Blueprint.
 
 ## Scripts úteis
 
